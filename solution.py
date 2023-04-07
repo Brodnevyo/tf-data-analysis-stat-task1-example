@@ -7,7 +7,4 @@ chat_id = 1025787461 # Ваш chat ID, не меняйте название пе
 def solution(x: np.array) -> float:
     # Измените код этой функции
     # Это будет вашим решением
-    x_bar = np.mean(x)
-    s = np.std(x, ddof=1)
-    a = (x_bar - 79) / (2 * s**2)
-    return a # Ваш ответ
+    return 2 * np.median(x) / (79 ** 2) # Ваш ответ
